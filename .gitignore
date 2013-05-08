@@ -23,3 +23,7 @@ build/
 # Cocoapods
 Pods
 Podfile.lock
+
+# Shinobi
+ShinobiGrids.embeddedframework
+TeamList/ShinobiLicense.sample.plist
