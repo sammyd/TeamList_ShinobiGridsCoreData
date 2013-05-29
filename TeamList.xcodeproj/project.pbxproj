@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		223E277F1756A7E6008B8B0D /* ShinobiCoreDataSeederTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 223E277E1756A7E6008B8B0D /* ShinobiCoreDataSeederTests.m */; };
 		228C0E18173893F80093D659 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228C0E17173893F80093D659 /* UIKit.framework */; };
 		228C0E1A173893F80093D659 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228C0E19173893F80093D659 /* Foundation.framework */; };
 		228C0E1C173893F80093D659 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228C0E1B173893F80093D659 /* CoreGraphics.framework */; };
@@ -33,6 +34,11 @@
 		228C0E61173894BF0093D659 /* ShinobiGrids.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228C0E5A173894BF0093D659 /* ShinobiGrids.framework */; };
 		228C0E65173895470093D659 /* ShinobiLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 228C0E64173895470093D659 /* ShinobiLicense.m */; };
 		228C0E67173895F10093D659 /* ShinobiLicense.plist in Resources */ = {isa = PBXBuildFile; fileRef = 228C0E66173895F10093D659 /* ShinobiLicense.plist */; };
+		22EADFC6173EEBBC00ED77E9 /* ShinobiCoreDataSeeder.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EADFC5173EEBBC00ED77E9 /* ShinobiCoreDataSeeder.m */; };
+		22EADFCB173EF05E00ED77E9 /* TeamListDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EADFCA173EF05E00ED77E9 /* TeamListDAO.m */; };
+		22EADFCF173EF07E00ED77E9 /* TeamListDAOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EADFCE173EF07E00ED77E9 /* TeamListDAOTests.m */; };
+		22EADFD4173EFCDE00ED77E9 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EADFD3173EFCDE00ED77E9 /* Employee.m */; };
+		22EADFD7173EFD0300ED77E9 /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EADFD6173EFD0300ED77E9 /* Team.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		223E277D1756A7E6008B8B0D /* ShinobiCoreDataSeederTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShinobiCoreDataSeederTests.h; sourceTree = "<group>"; };
+		223E277E1756A7E6008B8B0D /* ShinobiCoreDataSeederTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShinobiCoreDataSeederTests.m; sourceTree = "<group>"; };
 		228C0E14173893F80093D659 /* TeamList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		228C0E17173893F80093D659 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		228C0E19173893F80093D659 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -77,6 +85,17 @@
 		228C0E63173895470093D659 /* ShinobiLicense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShinobiLicense.h; sourceTree = "<group>"; };
 		228C0E64173895470093D659 /* ShinobiLicense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShinobiLicense.m; sourceTree = "<group>"; };
 		228C0E66173895F10093D659 /* ShinobiLicense.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ShinobiLicense.plist; sourceTree = "<group>"; };
+		22EADFC4173EEBBC00ED77E9 /* ShinobiCoreDataSeeder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShinobiCoreDataSeeder.h; sourceTree = "<group>"; };
+		22EADFC5173EEBBC00ED77E9 /* ShinobiCoreDataSeeder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShinobiCoreDataSeeder.m; sourceTree = "<group>"; };
+		22EADFC9173EF05E00ED77E9 /* TeamListDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamListDAO.h; sourceTree = "<group>"; };
+		22EADFCA173EF05E00ED77E9 /* TeamListDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamListDAO.m; sourceTree = "<group>"; };
+		22EADFCD173EF07E00ED77E9 /* TeamListDAOTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamListDAOTests.h; sourceTree = "<group>"; };
+		22EADFCE173EF07E00ED77E9 /* TeamListDAOTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamListDAOTests.m; sourceTree = "<group>"; };
+		22EADFD0173EF32200ED77E9 /* TeamListDAOProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeamListDAOProtocol.h; sourceTree = "<group>"; };
+		22EADFD2173EFCDE00ED77E9 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		22EADFD3173EFCDE00ED77E9 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		22EADFD5173EFD0300ED77E9 /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
+		22EADFD6173EFD0300ED77E9 /* Team.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Team.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +125,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		223E277C1756A796008B8B0D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				223E277D1756A7E6008B8B0D /* ShinobiCoreDataSeederTests.h */,
+				223E277E1756A7E6008B8B0D /* ShinobiCoreDataSeederTests.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		228C0E0B173893F80093D659 = {
 			isa = PBXGroup;
 			children = (
@@ -144,10 +172,10 @@
 		228C0E1F173893F80093D659 /* TeamList */ = {
 			isa = PBXGroup;
 			children = (
+				22EADFC3173EE9C000ED77E9 /* Data */,
 				228C0E62173894F40093D659 /* Licensing */,
 				228C0E28173893F80093D659 /* AppDelegate.h */,
 				228C0E29173893F80093D659 /* AppDelegate.m */,
-				228C0E31173893F90093D659 /* TeamList.xcdatamodeld */,
 				228C0E20173893F80093D659 /* Supporting Files */,
 			);
 			path = TeamList;
@@ -170,6 +198,8 @@
 		228C0E41173893F90093D659 /* TeamListTests */ = {
 			isa = PBXGroup;
 			children = (
+				223E277C1756A796008B8B0D /* Utilities */,
+				22EADFCC173EF06600ED77E9 /* DAO */,
 				228C0E47173893F90093D659 /* TeamListTests.h */,
 				228C0E48173893F90093D659 /* TeamListTests.m */,
 				228C0E42173893F90093D659 /* Supporting Files */,
@@ -216,6 +246,56 @@
 				228C0E66173895F10093D659 /* ShinobiLicense.plist */,
 			);
 			name = Licensing;
+			sourceTree = "<group>";
+		};
+		22EADFC3173EE9C000ED77E9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				22EADFD1173EFC8900ED77E9 /* CoreData */,
+				22EADFC8173EED0800ED77E9 /* DAO */,
+				22EADFC7173EEC5300ED77E9 /* Utilities */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		22EADFC7173EEC5300ED77E9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				22EADFC4173EEBBC00ED77E9 /* ShinobiCoreDataSeeder.h */,
+				22EADFC5173EEBBC00ED77E9 /* ShinobiCoreDataSeeder.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		22EADFC8173EED0800ED77E9 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				22EADFC9173EF05E00ED77E9 /* TeamListDAO.h */,
+				22EADFCA173EF05E00ED77E9 /* TeamListDAO.m */,
+				22EADFD0173EF32200ED77E9 /* TeamListDAOProtocol.h */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		22EADFCC173EF06600ED77E9 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				22EADFCD173EF07E00ED77E9 /* TeamListDAOTests.h */,
+				22EADFCE173EF07E00ED77E9 /* TeamListDAOTests.m */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		22EADFD1173EFC8900ED77E9 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				22EADFD5173EFD0300ED77E9 /* Team.h */,
+				22EADFD6173EFD0300ED77E9 /* Team.m */,
+				22EADFD2173EFCDE00ED77E9 /* Employee.h */,
+				22EADFD3173EFCDE00ED77E9 /* Employee.m */,
+				228C0E31173893F90093D659 /* TeamList.xcdatamodeld */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +433,10 @@
 				228C0E2A173893F80093D659 /* AppDelegate.m in Sources */,
 				228C0E33173893F90093D659 /* TeamList.xcdatamodeld in Sources */,
 				228C0E65173895470093D659 /* ShinobiLicense.m in Sources */,
+				22EADFC6173EEBBC00ED77E9 /* ShinobiCoreDataSeeder.m in Sources */,
+				22EADFCB173EF05E00ED77E9 /* TeamListDAO.m in Sources */,
+				22EADFD4173EFCDE00ED77E9 /* Employee.m in Sources */,
+				22EADFD7173EFD0300ED77E9 /* Team.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +445,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				228C0E49173893F90093D659 /* TeamListTests.m in Sources */,
+				22EADFCF173EF07E00ED77E9 /* TeamListDAOTests.m in Sources */,
+				223E277F1756A7E6008B8B0D /* ShinobiCoreDataSeederTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
