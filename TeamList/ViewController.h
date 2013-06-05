@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ShinobiGrids/ShinobiDataGrid.h>
+#import <ShinobiGrids/SDataGridDataSourceHelper.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <SDataGridDataSourceHelperDelegate>
 
 @end
