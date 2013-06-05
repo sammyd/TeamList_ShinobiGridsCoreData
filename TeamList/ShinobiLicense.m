@@ -19,9 +19,9 @@
      you can just make this method return it.
      */
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"ShinobiLicenseKey" ofType:@"plist"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"ShinobiLicense" ofType:@"plist"];
     NSDictionary *settings = [[NSDictionary alloc] initWithContentsOfFile:path];
-    NSString *key = settings[@"ShinobiChartsLicenseKey"];
+    NSString *key = settings[@"ShinobiLicenseKey"];
     if(key && ![key isEqualToString:@""]) {
         return key;
     }

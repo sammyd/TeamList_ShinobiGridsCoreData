@@ -30,6 +30,7 @@
     grid = [[ShinobiDataGrid alloc] initWithFrame:self.view.bounds];
     // Assign the license
     grid.licenseKey = [ShinobiLicense getShinobiLicenseKey];
+    grid.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
     // Add the appropriate columns
     [@[@"name", @"phone", @"email"] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
