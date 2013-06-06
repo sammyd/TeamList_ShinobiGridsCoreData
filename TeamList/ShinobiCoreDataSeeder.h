@@ -25,4 +25,9 @@
  */
 + (NSUInteger)numberOfEmployeesToCreate;
 
+/**
+ Number of teams to create
+ */
++ (NSUInteger)numberOfTeamsToCreate;
+
 @end

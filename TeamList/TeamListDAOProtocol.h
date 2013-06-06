@@ -16,6 +16,9 @@
 - (void)deleteEmployee:(Employee *)employee;
 - (Employee *)createEmployee;
 
+- (NSArray *)getTeamList;
+- (Team *)createTeam;
+
 - (void)save;
 
 @end

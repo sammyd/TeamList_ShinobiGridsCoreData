@@ -45,5 +45,20 @@
     STAssertEquals(startCount + 1, [dao getEmployeeList].count, @"Creating new employee increments the count by 1");
 }
 
+- (void)testCreatingATeamIncreasesTheCount
+{
+    NSUInteger startCount = [[dao getTeamList] count];
+    
+    // Get the team
+    Team *newTeam = [dao createTeam];
+    newTeam.name = @"new team";
+    
+    // Save the context
+    [dao save];
+    
+    // Refresh
+    STAssertEquals(startCount + 1, [[dao getTeamList] count], @"Creating a new team increments the count by 1");
+}
+
 
 @end

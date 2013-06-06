@@ -62,6 +62,10 @@
     // Set the datasource helper's delegate so we can listen to edit events
     datasourceHelper.delegate = self;
     
+    // Set the data source helper to use grouping
+    datasourceHelper.groupedPropertyKey = @"team";
+    datasourceHelper.groupedPropertySortOrder = SDataGridColumnSortOrderAscending;
+    
     // And add the grid to the view
     [self.view addSubview:_grid];
 }
@@ -106,6 +110,16 @@
     }
     // All the other columns should use the default behaviour
     return NO;
+}
+
+- (id)dataGridDataSourceHelper:(SDataGridDataSourceHelper *)helper groupValueForProperty:(NSString *)propertyKey withSourceObject:(id)object
+{
+    if([propertyKey isEqualToString:@"team"]) {
+        // We've been asked for a team. We want to return the team name
+        Employee *e = (Employee*)object;
+        return e.team.name;
+    }
+    return nil;
 }
 
 - (void)shinobiDataGrid:(ShinobiDataGrid *)grid didTapCellAtCoordinate:(const SDataGridCoord *)gridCoordinate isDoubleTap:(BOOL)isDoubleTap

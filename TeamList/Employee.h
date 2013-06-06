@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "Team.h"
 
 
 @interface Employee : NSManagedObject
@@ -16,6 +17,6 @@
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * phone;
 @property (nonatomic, retain) NSString * email;
-@property (nonatomic, retain) NSManagedObject *team;
+@property (nonatomic, retain) Team *team;
 
 @end

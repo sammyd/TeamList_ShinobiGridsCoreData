@@ -37,14 +37,7 @@
 #pragma mark - TeamListDAOProtocol methods
 - (NSArray *)getEmployeeList
 {
-    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Employee"];
-    NSError *error;
-    NSArray *results = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
-    if(error) {
-        NSLog(@"There was an error");
-        return nil;
-    }
-    return results;
+    return [self getRecordsForKey:@"Employee"];
 }
 
 - (Employee *)createEmployee
@@ -59,6 +52,18 @@
     [self.managedObjectContext deleteObject:employee];
 }
 
+- (NSArray *)getTeamList
+{
+    return [self getRecordsForKey:@"Team"];
+}
+
+- (Team *)createTeam
+{
+    Team *newTeam = [NSEntityDescription insertNewObjectForEntityForName:@"Team"
+                                                  inManagedObjectContext:self.managedObjectContext];
+    return newTeam;
+}
+
 - (void)save
 {
     NSError *error = nil;
@@ -71,6 +76,19 @@
             abort();
         }
     }
+}
+
+#pragma mark - Utility methods
+- (NSArray *)getRecordsForKey:(NSString *)key
+{
+    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:key];
+    NSError *error;
+    NSArray *results = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    if(error) {
+        NSLog(@"There was an error");
+        return nil;
+    }
+    return results;
 }
 
 
