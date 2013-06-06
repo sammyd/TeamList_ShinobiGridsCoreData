@@ -10,6 +10,6 @@
 #import <ShinobiGrids/ShinobiDataGrid.h>
 #import <ShinobiGrids/SDataGridDataSourceHelper.h>
 
-@interface ViewController : UIViewController <SDataGridDataSourceHelperDelegate>
+@interface ViewController : UIViewController <SDataGridDataSourceHelperDelegate, UIAlertViewDelegate>
 
 @end

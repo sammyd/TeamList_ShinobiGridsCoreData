@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		223E277F1756A7E6008B8B0D /* ShinobiCoreDataSeederTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 223E277E1756A7E6008B8B0D /* ShinobiCoreDataSeederTests.m */; };
+		2259E9A81761245600DFAD10 /* delete-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2259E9A71761245600DFAD10 /* delete-icon.png */; };
+		2259E9AB1761266000DFAD10 /* SdataGridImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2259E9AA1761266000DFAD10 /* SdataGridImageCell.m */; };
 		228C0E18173893F80093D659 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228C0E17173893F80093D659 /* UIKit.framework */; };
 		228C0E1A173893F80093D659 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228C0E19173893F80093D659 /* Foundation.framework */; };
 		228C0E1C173893F80093D659 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228C0E1B173893F80093D659 /* CoreGraphics.framework */; };
@@ -57,6 +59,9 @@
 /* Begin PBXFileReference section */
 		223E277D1756A7E6008B8B0D /* ShinobiCoreDataSeederTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShinobiCoreDataSeederTests.h; sourceTree = "<group>"; };
 		223E277E1756A7E6008B8B0D /* ShinobiCoreDataSeederTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShinobiCoreDataSeederTests.m; sourceTree = "<group>"; };
+		2259E9A71761245600DFAD10 /* delete-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete-icon.png"; sourceTree = "<group>"; };
+		2259E9A91761266000DFAD10 /* SdataGridImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdataGridImageCell.h; sourceTree = "<group>"; };
+		2259E9AA1761266000DFAD10 /* SdataGridImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SdataGridImageCell.m; sourceTree = "<group>"; };
 		228C0E14173893F80093D659 /* TeamList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		228C0E17173893F80093D659 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		228C0E19173893F80093D659 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -143,6 +148,14 @@
 			name = Utilities;
 			sourceTree = "<group>";
 		};
+		2259E9A6176123B500DFAD10 /* Imagery */ = {
+			isa = PBXGroup;
+			children = (
+				2259E9A71761245600DFAD10 /* delete-icon.png */,
+			);
+			name = Imagery;
+			sourceTree = "<group>";
+		};
 		228C0E0B173893F80093D659 = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +196,7 @@
 		228C0E1F173893F80093D659 /* TeamList */ = {
 			isa = PBXGroup;
 			children = (
+				2259E9A6176123B500DFAD10 /* Imagery */,
 				22EADFC3173EE9C000ED77E9 /* Data */,
 				22D88186175E9B1B003DD0CC /* Views */,
 				228C0E28173893F80093D659 /* AppDelegate.h */,
@@ -265,6 +279,8 @@
 				228C0E62173894F40093D659 /* Licensing */,
 				22D88187175E9B46003DD0CC /* ViewController.h */,
 				22D88188175E9B46003DD0CC /* ViewController.m */,
+				2259E9A91761266000DFAD10 /* SdataGridImageCell.h */,
+				2259E9AA1761266000DFAD10 /* SdataGridImageCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -402,6 +418,7 @@
 				228C0E5F173894BF0093D659 /* 44_sort_up.png in Resources */,
 				228C0E60173894BF0093D659 /* 44_sort_up@2x.png in Resources */,
 				228C0E67173895F10093D659 /* ShinobiLicense.plist in Resources */,
+				2259E9A81761245600DFAD10 /* delete-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +476,7 @@
 				22EADFD4173EFCDE00ED77E9 /* Employee.m in Sources */,
 				22EADFD7173EFD0300ED77E9 /* Team.m in Sources */,
 				22D88189175E9B46003DD0CC /* ViewController.m in Sources */,
+				2259E9AB1761266000DFAD10 /* SdataGridImageCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
