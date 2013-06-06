@@ -10,6 +10,7 @@
 #import "TeamListDAO.h"
 #import "ShinobiLicense.h"
 #import "SdataGridImageCell.h"
+#import <ShinobiGrids/SDataGridDataGroup.h>
 
 
 @implementation ViewController {
@@ -132,7 +133,8 @@
     // Only interested in the delete column
     if([gridCoordinate.column.propertyKey isEqualToString:@"delete"]) {
         // Get hold of the employee record
-        employeeToDelete = datasourceHelper.sortedData[gridCoordinate.row.rowIndex];
+        SDataGridDataGroup *dataGroup = datasourceHelper.sortedData[gridCoordinate.row.sectionIndex];
+        employeeToDelete = dataGroup.items[gridCoordinate.row.rowIndex];
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Delete User?"
                                                         message:[NSString stringWithFormat:@"Are you sure that you want to delete the employee record for %@?", employeeToDelete.name]
                                                        delegate:self
